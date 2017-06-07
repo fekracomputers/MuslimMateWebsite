@@ -1,0 +1,176 @@
+
+/*********************************************
+ * Hijri - Gregorian Date Picker             *
+ *                                           *
+ * Design by ZulNs @Yogyakarta, January 2016 *
+ *********************************************/
+
+.calendar {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    cursor: default;
+    margin-left: 0px !important;
+    background: #eef;
+    background: -webkit-linear-gradient(#eff,#fef,#ffe);
+    background: -moz-linear-gradient(#eff,#fef,#ffe);
+    background: -o-linear-gradient(#eff,#fef,#ffe);
+    background: linear-gradient(#eff,#fef,#ffe);
+    width:100% !important;
+    text-align: center !important;
+}
+.calendar .header-button,
+.calendar .setting-button,
+.calendar .weekday-row div,
+.calendar .date-grid div {
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+    line-height: 30px;
+}
+.calendar .weekday-row div,
+.calendar .date-grid div {
+    vertical-align: middle;
+}
+.calendar .header-row *,
+.calendar .setting-button,
+.calendar .date-grid .normal-date {
+    cursor: pointer;
+}
+.calendar .header-row,
+.calendar .month-field,
+.calendar .year-field {
+    color: #fff;
+    background: #444444;
+}
+.calendar .setting-row {
+    color: #fff;
+    background: #2b7;
+}
+.calendar .header-button:active,
+.calendar .header-button.active:active {
+    color: #259;
+    background: #ccf;
+}
+.calendar .header-button.active {
+    color: #fff;
+    background: #47b;
+}
+.calendar .setting-button:active,
+.calendar .setting-button.active:active {
+    color: #2b7;
+    background: #cfc;
+}
+.calendar .setting-button.active {
+    color: #fff;
+    background: transparent;
+}
+.calendar .setting-button.disabled {
+    color: #777;
+    background: #1a6;
+    pointer-events: none;
+}
+.calendar .month-field,
+.calendar .year-field {
+    font-size: 30px !important;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-family:'Cairo', sans-serif ;
+    text-align: center;
+    text-align-last: center;
+
+}
+.calendar .month-field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+.calendar .month-field::-ms-expand {
+    display: none;
+}
+.calendar .year-field {
+}
+.calendar .header-button {
+
+}
+.calendar .setting-button {
+    width: 13%;
+}
+.calendar .weekday-row div,
+.calendar .date-grid .excluded-date {
+    width: 13.4%;
+}
+.calendar .date-grid .normal-date {
+    width: 12%;
+    height: 35px;
+    line-height: 24px;
+    margin: 5px 5px;
+}
+.calendar .normal-date {
+    color: #000;
+}
+.calendar .friday-date {
+    color: #292;
+}
+.calendar .sunday-date {
+    color: #c22;
+}
+.calendar .date-grid .excluded-date {
+    font-size: .9em;
+    color: #aaa;
+}
+.calendar .date-grid .normal-date:active {
+    color: #fff;
+    background: #939;
+    -moz-box-shadow: 0 0 1px #000;
+    -webkit-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000;
+}
+.calendar .date-grid .current-date,
+.calendar .date-grid .specialz-date,
+.calendar .date-grid .selected-date {
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.calendar .date-grid .current-date {
+    color: #fff;
+    background: #f31;
+}
+.calendar .date-grid .specialz-date {
+    color: #fff;
+    background: #2b7;
+}
+.calendar .date-grid .selected-date {
+    color: #fff;
+    background: #ab5400;
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .calendar .month-field, .calendar .year-field{
+        font-size: 24px !important;
+    }
+    .year-field {
+        position: absolute;
+        top: 2.4%;
+        width: 80px;
+        left: 49%;
+    }
+    .month-field{
+        right: 52% !important;
+    }
+    .month-right {
+        font-size: 24px;
+        position: absolute;
+        right: 50px;
+        top: 15px;
+    }
+    .month-left{
+        font-size: 24px;
+        position: absolute;
+        left: 40px;
+        top: 15px;
+    }
+}

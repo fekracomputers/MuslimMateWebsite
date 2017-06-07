@@ -1,0 +1,16 @@
+.small-box .icon{
+    right: 185px;
+}
+.event-ts{
+    right: 235px !important;
+}
+.box-header > .box-tools{
+    left:5px;
+    right:inherit;
+}
+.changeDate {
+    position: absolute;
+    top: -40px;
+    left: 130px;
+    right: inherit;
+}

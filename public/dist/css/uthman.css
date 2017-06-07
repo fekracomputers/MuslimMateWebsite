@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "Naskh";
+	src: url('../uthmantn/uthmantn.eot'); /* IE9 Compat Modes */
+	src: local('KFGQPC Uthman Taha Naskh'),
+		   url('../uthmantn/uthmantn.eot?iefix') format('eot'), /* IE6-IE8 */
+		   url('../uthmantn/uthmantn.otf') format('opentype'),
+		   url('../uthmantn/uthmantn.woff') format('woff'), /* Modern Browsers */
+		   url('../uthmantn/uthmantn.ttf') format('truetype'),  /* Safari, Android, iOS */
+		   url('../uthmantn/uthmantn.svg#svgFontName') format('svg'); /* Legacy iOS */
+} 
