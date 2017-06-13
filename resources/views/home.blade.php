@@ -71,7 +71,7 @@
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top">
+        <nav class="navbar navbar-static-top" dir="ltr">
             <!-- Sidebar toggle button-->
             <a href="{{url('/')}}" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -85,6 +85,17 @@
                         <a href="https://play.google.com/store/apps/details?id=com.fekracomputers.muslimmate" class="link-android">
                             <img src="{{asset('dist/img/google_badge.png')}}" alt="" class="img-android">
                         </a>
+                    </li>
+                    <li class="text-center lang-xs">
+                        @if($lang == 'eng')
+                        <a href="{{url('/ar')}}" class="text-center margin-top">عربي
+                            <img src="{{url('dist/img/language.png')}}" alt="" class="img-responsive img-lang">
+                        </a>
+                            @else
+                            <a href="{{url('/eng')}}" class="text-center margin-top">English
+                                <img src="{{url('dist/img/language.png')}}" alt="" class="img-responsive img-lang">
+                            </a>
+                        @endif
                     </li>
                 </ul>
             </div>

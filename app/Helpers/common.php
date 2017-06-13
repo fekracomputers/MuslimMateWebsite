@@ -943,6 +943,12 @@ function getMonthMilady($name ,$lang){
     }
 
 }
+
+function getActivePrayer($active , $current){
+    if($active == $current){
+        echo 'event-active' ;
+    }
+}
 $prayerKey = ['Fajer'=>'الفجر','Sunrise'=> 'الشروق','Zohr'=>'الظهر',
                 'Asr'=>'العصر','Maghreb'=>'المغرب','Eshaa'=>'العشاء'];
 

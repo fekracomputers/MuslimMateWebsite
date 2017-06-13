@@ -49,7 +49,6 @@ class HomeController extends Controller
         ,'today','year','month','day','mMonth','mday','myear','nextPrayer','nextEvent','prayerName','nextName')) ;
     }
 
-
     public function EventsMuslim($lang){
         $title = getTitle($lang);
         $dir = getDirection($lang);
@@ -316,11 +315,27 @@ class HomeController extends Controller
             if($h < $row[0]){
                 array_push($arr,[$row , $counter]);
                 $arr = array_collapse($arr) ;
-                return $arr ;
                 break ;
             }
             $counter++ ;
         }
+        if(!empty($arr)){
+            return $arr ;
+        }else{
+            $carbon = Carbon::tomorrow();
+            $h = $carbon->hour ;
+            foreach ($prayer['times'] as $row){
+                if($h < $row[0]){
+                    array_push($arr,[$row , $counter]);
+                    $arr = array_collapse($arr) ;
+                    return $arr ;
+                    break ;
+                }
+                $counter++ ;
+            }
+
+        }
+
 
     }
     

@@ -24,7 +24,7 @@
             </div>
 
             <button type="button" class="btn btn-transparent btn-sm pull-right reset-calendar" data-toggle="tooltip" title="Reset Calendar" style="margin-right: 5px;">
-                <i class="fa fa-cog" aria-hidden="true"></i>
+                <i class="fa fa-history" aria-hidden="true"></i>
             </button>
 
         </div>

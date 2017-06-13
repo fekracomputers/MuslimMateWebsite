@@ -150,27 +150,28 @@
 }
 @media (max-width: 767px) {
     .calendar .month-field, .calendar .year-field{
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
     .year-field {
         position: absolute;
-        top: 2.4%;
+        top: 3.2%;
         width: 80px;
-        left: 49%;
+        left: 51%;
     }
     .month-field{
-        right: 52% !important;
+        right: 50% !important;
+        top:3% !important;
     }
     .month-right {
         font-size: 24px;
         position: absolute;
-        right: 50px;
+        right: 20px;
         top: 15px;
     }
     .month-left{
         font-size: 24px;
         position: absolute;
-        left: 40px;
+        left: 20px;
         top: 15px;
     }
 }

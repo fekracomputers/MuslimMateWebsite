@@ -321,14 +321,56 @@
     margin-right: 10px;
 }
 .event-active{
-    background: #dffff0;
+    background: #00a65a !important;
+    color: #fff !important;
+}
+.event-active > .text-g1{
+    color: #fff !important;
+}
+.img-lang{
+    display: inline;
+}
+.margin-top{
+    margin-top: 10px;
 }
 @media (max-width: 767px) {
+    h2{
+        font-size: 26px !important;
+    }
+    h3{
+        font-size: 22px !important;
+    }
     .logo-lg{
         width:130px;
     }
     .link-android{
         margin-top: -50px;
     }
+    .style-1 , .style-3 , .style-5 , .style-7{
+        background: #e0e0e0 !important;
+    }
+    .style-2 , .style-4 , .style-6 {
+        background: #fff !important;
+    }
+    .changeDate{
+        right: 115px;
+    }
+    .img-android{
+        height: 40px;
+    }
+    .lang-xs{
+        display: inline;
+        float: right;
+        margin-top: -50px;
+        float: right !important;
+    }
+    .event-active{
+        background: #00a65a !important;
+        color: #fff !important;
+    }
+    .event-active > .text-g1{
+        color: #fff !important;
+    }
+
 }
 
